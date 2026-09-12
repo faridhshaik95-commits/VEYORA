@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>VEYORA — Travel. Explore. Live.</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="navbar">
+  <a class="brand" href="index.html"><span class="brand-mark">V</span><span><b>VEYORA</b><small>Travel. Explore. Live.</small></span></a>
+  <nav><a href="#booking">Flights</a><a href="#booking">Hotels</a><a href="#booking">Buses</a><a href="#booking">Trains</a><a href="#deals">Deals</a></nav>
+  <div class="nav-actions"><a href="trips.html">My Trips</a><button class="login" onclick="alert('Demo login — connect your auth API here.')">Login</button></div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-copy">
+    <span class="eyebrow">TRAVEL WITHOUT LIMITS</span>
+    <h1>Your journey<br><em>starts here.</em></h1>
+    <p>Compare routes, discover great deals and book your next adventure from one simple place.</p>
+    <div class="hero-pills"><span>✓ Best prices</span><span>✓ Secure booking</span><span>✓ 24/7 support</span></div>
+  </div>
+  <div class="hero-art"><div class="orbit"></div><div class="plane">✈</div><span class="cloud c1">☁</span><span class="cloud c2">☁</span></div>
+</section>
+
+<section id="booking" class="booking-wrap">
+  <div class="tabs">
+    <button class="tab active" data-type="Flights">✈ Flights</button>
+    <button class="tab" data-type="Hotels">▣ Hotels</button>
+    <button class="tab" data-type="Buses">▰ Buses</button>
+    <button class="tab" data-type="Trains">▤ Trains</button>
+  </div>
+  <form id="searchForm" class="search-box">
+    <label>FROM<input id="from" value="Hyderabad (HYD)" required></label>
+    <button type="button" class="swap" id="swap">⇄</button>
+    <label>TO<input id="to" value="Delhi (DEL)" required></label>
+    <label>DEPARTURE<input id="departure" type="date" required></label>
+    <label>RETURN<input id="returnDate" type="date"></label>
+    <label>TRAVELLERS<select id="travellers"><option>1 Traveller</option><option>2 Travellers</option><option>3 Travellers</option><option>4 Travellers</option></select></label>
+    <button class="search-btn">Search</button>
+  </form>
+</section>
+
+<section class="section" id="deals">
+  <div class="section-head"><div><span class="eyebrow">SAVE MORE</span><h2>Popular travel deals</h2></div><a href="results.html">View all →</a></div>
+  <div class="cards">
+    <article class="deal-card"><div class="deal-icon">✈</div><span>FLIGHTS</span><h3>Up to 25% off domestic flights</h3><p>Limited-time fares on popular routes.</p><a href="results.html">Book now →</a></article>
+    <article class="deal-card"><div class="deal-icon">▣</div><span>HOTELS</span><h3>Save up to 40% on stays</h3><p>Comfortable hotels for every budget.</p><a href="results.html">Explore stays →</a></article>
+    <article class="deal-card"><div class="deal-icon">▰</div><span>BUSES</span><h3>Flat 15% off bus bookings</h3><p>Travel across cities for less.</p><a href="results.html">Book now →</a></article>
+  </div>
+</section>
+
+<section class="section categories"><div class="section-head"><div><span class="eyebrow">ONE PLATFORM</span><h2>Everything you need to travel</h2></div></div>
+<div class="category-grid"><div>✈<b>Flights</b><small>Domestic & international</small></div><div>▣<b>Hotels</b><small>Stays you'll love</small></div><div>▰<b>Buses</b><small>City-to-city travel</small></div><div>▤<b>Trains</b><small>Easy rail bookings</small></div></div></section>
+
+<section class="cta"><div><span class="eyebrow">READY TO GO?</span><h2>Let's go somewhere wonderful.</h2><p>Your next memory is only a search away.</p></div><a href="#booking" class="cta-btn">Start exploring →</a></section>
+</main>
+
+<footer><div><b>VEYORA</b><p>Travel. Explore. Live.</p></div><div><b>Explore</b><a href="#booking">Flights</a><a href="#booking">Hotels</a><a href="#deals">Deals</a></div><div><b>Support</b><a href="#">Help Center</a><a href="#">Cancellation</a><a href="#">Terms</a></div><div><b>Project</b><a href="trips.html">My Trips</a><a href="README.md">Documentation</a></div></footer>
+<div class="copyright">© 2026 VEYORA. Built as a full-stack learning project.</div>
+<script src="script.js"></script>
+</body></html>
